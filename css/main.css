@@ -1,4 +1,4 @@
-html, body {
+html{
   margin: 0;
   padding: 0;
   background: #000;
@@ -11,6 +11,7 @@ body{
   background-repeat: no-repeat;
   background-size: cover;
   background-color: bisque;
+  margin: 10px;
 }
 
 main{
