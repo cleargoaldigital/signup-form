@@ -2,7 +2,6 @@ html{
   margin: 0;
   padding: 0;
   background: #000;
-  color: #fff;
 }
 
 body{
@@ -10,8 +9,7 @@ body{
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  background-color: bisque;
-  margin: 10px;
+  margin: 15px 0px;
 }
 
 main{
@@ -20,13 +18,19 @@ main{
 
 .img-div{
   width: 35%;
-  margin: 5px 2px 0 20px;
-
+  margin: 5px 2px 0px 0px;
 }
 
-h1{
+h4{
   position: relative;
   top: 20%;
+  background-color: antiquewhite;
+  width: 100%;
+  text-align: center;
+  padding: 10px 0px;
+  margin-right: 5px;
+  opacity: 35%;
+  color: #000;
 }
 
 .signup{
@@ -36,27 +40,43 @@ h1{
   width: 65%;
 }
 
+.header-div{
+  background-color: rgb(240, 240, 240);
+  color: #000;
+  margin: 0px;
+}
+
 .header-div p{
   font-weight: bold;
   text-align: left;
-  margin-left: 20px;
+  padding-left: 10px;
 }
 
-.header-div{
-  background-color: rgb(175, 170, 170);
+.form-div{
+  background: #fff;
+  color: #000;
 }
 
-h2{
-  margin-left: 20px;
+div{
+  display: flex;
+  flex-direction: column;
+  padding: 2px 0px;
+}
+
+h3{
+  padding-left: .8rem;
 }
 
 form{
-  margin-left: 20px;
+  padding-left: .8rem;
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-gap: 5px;
+  grid-gap: 7px;
 }
 
+label{
+  font-size: 0.765rem;
+}
 form p{
   margin-top: 0;
   color: red;
@@ -68,45 +88,54 @@ form p::before{
   color: red;
 }
 
+input{
+  border: 1px solid #E5E7EB;
+  border-radius: 3px;
+}
+
+input[name="last_name"]{
+  border: 1.5px solid rgb(75, 75, 226);
+  box-shadow: .8px .5px 0.7px rgb(162, 83, 236);
+}
+
 input[type=password]{
-  border-color: red;
-  font-weight: lighter;
-}
-
-input[type=text]:nth-child(2){
-  border-color: blue;
-  font-weight: lighter;
-}
-
-.form-div{
-  background: #fff;
-  color: #000;
+  border: 1px solid rgb(216, 48, 48);
 }
 
 ::placeholder{
-  font-weight: bold;
   color: #000;
+  opacity: 80%;
 }
+
 .submit{
-  background-color: rgb(175, 170, 170);
-  box-shadow: 2px 0 4px grey;
+  background-color: rgb(204, 199, 199);
+  box-shadow: 0px 0 6px grey;
+}
+
+.submit p{
+  color:#000;
+  font-weight: lighter;
+  margin-left: 10px;
 }
 
 .btn{
-  padding: 10px 25px;
-  background: rgb(59, 85, 59);
+  padding: 10px;
+  background: #596D48;
   color: #fff;
   margin: 15px 10px;
   border: none;
   border-radius: 5px;
+  align-self: flex-start;
 }
 
-@media screen and (min-width: 480px) {
+@media screen and (max-width: 660px) {
   body {
     background-color: lightgreen;
   }
   form {
     display: flex;
     flex-direction: column;
+    margin-left: 0;
+    padding: 10px;
   }
   }
