@@ -23,6 +23,11 @@ main{
 
 }
 
+h1{
+  position: relative;
+  top: 20%;
+}
+
 .signup{
   color: #fff;
   display: flex;
@@ -54,6 +59,7 @@ form{
 form p{
   margin-top: 0;
   color: red;
+  font-size: .8rem;
 }
 
 form p::before{
@@ -93,3 +99,13 @@ input[type=text]:nth-child(2){
   border: none;
   border-radius: 5px;
 }
+
+@media screen and (min-width: 480px) {
+  body {
+    background-color: lightgreen;
+  }
+  form {
+    display: flex;
+    flex-direction: column;
+  }
+  }
