@@ -1,9 +1,95 @@
 html, body {
   margin: 0;
   padding: 0;
-  background: #fff;
+  background: #000;
+  color: #fff;
+}
+
+body{
+  background-image: url("/odinform-bg.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: bisque;
+}
+
+main{
+  display:flex;
+}
+
+.img-div{
+  width: 35%;
+  margin: 5px 2px 0 20px;
+
+}
+
+.signup{
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  width: 65%;
+}
+
+.header-div p{
+  font-weight: bold;
+  text-align: left;
+  margin-left: 20px;
+}
+
+.header-div{
+  background-color: rgb(175, 170, 170);
+}
+
+h2{
+  margin-left: 20px;
 }
 
 form{
   margin-left: 20px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 5px;
+}
+
+form p{
+  margin-top: 0;
+  color: red;
+}
+
+form p::before{
+  content: "*";
+  color: red;
+}
+
+input[type=password]{
+  border-color: red;
+  font-weight: lighter;
+}
+
+input[type=text]:nth-child(2){
+  border-color: blue;
+  font-weight: lighter;
+}
+
+.form-div{
+  background: #fff;
+  color: #000;
+}
+
+::placeholder{
+  font-weight: bold;
+  color: #000;
+}
+.submit{
+  background-color: rgb(175, 170, 170);
+  box-shadow: 2px 0 4px grey;
+}
+
+.btn{
+  padding: 10px 25px;
+  background: rgb(59, 85, 59);
+  color: #fff;
+  margin: 15px 10px;
+  border: none;
+  border-radius: 5px;
 }

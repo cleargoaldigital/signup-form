@@ -9,72 +9,63 @@
 
 <body>
 
-<h2 class=" signup-container title">Sign Up</h2>
-
-<form method="post">
-
-    <div class="form-input">
-        <label for="fname">First name</label>
-        <input type="text" name="first_name">
+    <main>
+    <div class="img-div">
+        <h1>ODIN LOGO</h1>
     </div>
+    <div class="signup">
+<div class="header-div">
+    <p>This a mock sign up page given as a mini project on the Odin Project Online Class on Web Programming - Intermediate HTML and CSS.</p>
 
+    <p>We love what we do</p>
 
-    <div class="form-input">
-        <label for="lname">Last name</label>
-        <input type="text" name="last_name">
-    </div>
-       
-    <div class="form-input">
-        <label class="label">Email</label>
-        <input type="email" name="email">
-    </div>
-     
-    <div class="form-input">
-        <label for="gender">Gender</label>
-        <input type="radio" name="gender" value="Male">Male
-        <input type="radio" name="gender" value="Female">Female
-        <input type="radio" name="gender" value="other">Other
+</div>
+  
+    <div class="form-div">
+        <h2>Let's do this together!</h2>
+    <form method="post">
+
+        <div>
+            <label for="fname">FIRST NAME</label>
+            <input type="text" name="first_name" placeholder="Taofeek">
+        </div>
+    
+        <div>
+            <label for="lname">LAST NAME</label>
+            <input type="text" name="last_name" placeholder="Ajibade">
+        </div>
+           
+        <div>
+            <label class="label">EMAIL</label>
+            <input type="email" name="email">
+        </div>
+         
+        <div>
+            <label for="phone_number">PHONE NUMBER</label>
+            <input type="number" name="phone_number" id="phone_number">
+        </div>
+        
+        <div>
+            <label for="password">Password</label>
+            <input type="password" id="password">
+            <p>Password do not match</p>
+        </div>
+    
+        <div>
+            <label class="password">Confirm Password</label>
+            <input type="password" id="password">
+        </div>
+        
+        </form>
     </div>
     
-    <div class="form-input">
-        <label for="password">Password</label>
-        <input type="password" id="password">
-    </div>
-
-    <div class="form-input">
-        <label class="password">Confirm Password</label>
-        <input type="password" id="password">
-    </div>
-    
-    <div class="form-input">
-
-        <label for="education-level">Educational Level</label>
-        <select name="education" id="education-select">
-            <option name="education-select" value="" selected></option>
-            <option name="education-select" value="fdegree">First Degree</option>
-            <option name="education-select" value="masters">Masters</option>
-            <option name="education-select" value="phd">PhD</option>
-        </select>
-    </div>
-
-    <div class="input-group education">
-        <label for="experience-level">Experience Level</label>
-        <select name="experience" id="experience-select>
-            <option value="edu-level"></option>
-            <option value="experience-select">Beginner</option>
-            <option value="experience-select">Intermediate</option>
-            <option value="experience-select">Professional</option>
-        </select>
-    </div>
-
-    <div class="form-input">
-        <legend for="about-self">Tell us about you</legend>
-        <textarea type="text" name="first_name" placeholder="Write message here"></textarea>
-    </div>
-
+    <div class="submit">
     <button class="btn" type="submit">Create Account</button>
-</form>
 
-
+    <p>Already have an acount? Log in</p>
+    </div>
+    </div>
+    
+</main>
 </body>
 </html>
