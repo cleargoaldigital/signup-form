@@ -5,7 +5,7 @@ html{
 }
 
 body{
-  background-image: url("/odinform-bg.jpg");
+  background-image: url(/odinform-bg.jpg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -130,9 +130,9 @@ input[type=password]{
 }
 
 @media screen and (max-width: 660px) {
-  body {
+  /* body {
     background-color: lightgreen;
-  }
+  } */
   form {
     display: flex;
     flex-direction: column;
