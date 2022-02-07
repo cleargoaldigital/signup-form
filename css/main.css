@@ -20,11 +20,19 @@ main{
 .img-div{
   width: 35%;
   margin: 5px 2px 0px 0px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.logo{
+  position: absolute;
+  top: 20%;
+  width: 100%;
 }
 
 h4{
-  position: relative;
-  top: 20%;
   background-color: antiquewhite;
   width: 100%;
   text-align: center;
@@ -32,6 +40,10 @@ h4{
   margin-right: 5px;
   opacity: 35%;
   color: #000;
+}
+
+.img-div, .signup{
+  height: 100vh;
 }
 
 .signup{
@@ -72,7 +84,7 @@ form{
   padding-left: .8rem;
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-gap: 7px;
+  grid-gap: 5px;
 }
 
 label{
@@ -130,13 +142,28 @@ input[type=password]{
 }
 
 @media screen and (max-width: 660px) {
-  /* body {
-    background-color: lightgreen;
-  } */
   form {
     display: flex;
     flex-direction: column;
     margin-left: 0;
-    padding: 10px;
+    padding: 5px 10px;
   }
   }
+
+#copyright {
+  position: absolute;
+  bottom: 10%;
+  color: #fff;
+  text-align: center;
+  margin: 5px 0px;
+  background-color: #596D48;
+  opacity: 75%;
+  font-style: italic;
+  padding: 10px 0px;
+  width: 100%;
+}
+
+a{
+  text-decoration: none;
+  color: #E5E7EB;
+}
