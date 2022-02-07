@@ -8,12 +8,13 @@ html{
 }
 
 body{
-  background-image: url("/images/odin3.jpg");
+  background-image: url('/images/odin4.jpg');
   background-position: center;
   background-repeat: no-repeat;
+  background-attachment: fixed;
   background-size: cover;
   margin: 15px 0px;
-  height: auto;
+  min-height: 100%;
 }
 
 main{
